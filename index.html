@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <!-- <link rel="icon" type="image/png" href="{{assets}}i/favicon.png"> -->
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- <link rel="icon" sizes="192x192" href="{{assets}}i/app-icon72x72@2x.png"> -->
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+    <script>
+        (function(doc,win){
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize' ,
+        recalc = function()
+        {
+            var clientWidth = docEl.clientWidth;
+            if(!clientWidth) return;
+            if(clientWidth>640){
+                clientWidth=640;
+            }
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+    recalc();
+    if(!doc.addEventListener) return;
+    win.addEventListener(resizeEvt,recalc,false);
+    doc.addEventListener('DOMContentLoaded',recalc,false);
+})(document,window);
+    </script>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="mp-content">
+    <div class="mp-bjBox" id="currentBox">
+        <a class="bjBtn" href="javascript:">名片组</a>
+        <!-- <a  class="mp-back rt" href="JavaScript:history.go(-1)">
+             <span>
+                <i class="iconfont">&#xe600;</i><b>返回</b>
+            </span>
+        </a> -->
+    </div>
+    <div class="mp-group">
+        <section   class="accordion-gapped">
+            <dl id="101" class=" accordion-item default-group groupDownBtn">
+                <dt class="accordion-title" data-link='group1.txt'>
+                  <span> 默认分组</span>
+                  <i class="on userNum">6</i>
+                </dt>
+                <dd class=" accordion-bd am-collapse">
+                    <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                    <div class="accordion-content">
+                        <div class="group-list" id="30">
+                            <div class="group-list-mes">
+                                <div class="mes-img"><img src="images/call-no.png" alt=""></div>
+                                <div class="mes-data">
+                                    <h3>开发人员（null）</h3>
+                                    <p>测试测试...</p>
+                                    <i>企业</i>
+                                </div>
+                                <div class="mes-gz rt">
+                                    <i class="iconfont">&#xe63c;</i>
+                                    <span>相互关注</span>
+                                </div>
+                            </div>
+                            <ul class="group-list-btn">
+                                <li class="lt"><a href="http://www.baidu.com"><i class="iconfont">&#xe639;</i><span>查看</span></a></li>
+                                <li class="lt"><a href="tel:13799260382"><i class="iconfont">&#xe644;</i><span>拨号</span></a></li>
+                                <li class="lt"><a class="selectGroup" href="javascript:"><i class="iconfont">&#xe694;</i><span>分组</span></a></li>
+                                <li class="lt"><a class="cancelFollow" href="javascript:"><i class="iconfont">&#xe609;</i><span>取消</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="group-list" id="31">
+                            <div class="group-list-mes">
+                                <div class="mes-img"><img src="images/call-no.png" alt=""></div>
+                                <div class="mes-data">
+                                    <h3>开发人员（null）</h3>
+                                    <p>测试测试...</p>
+                                    <i>企业</i>
+                                </div>
+                                <div class="mes-gz rt">
+                                    <i class="iconfont">&#xe61b;</i>
+                                    <span>已关注</span>
+                                </div>
+                            </div>
+                            <ul class="group-list-btn">
+                                <li class="lt"><a href="http://www.baidu.com"><i class="iconfont">&#xe639;</i><span>查看</span></a></li>
+                                <li class="lt"><a href="tel:13799260382"><i class="iconfont">&#xe644;</i><span>拨号</span></a></li>
+                                <li class="lt"><a class="selectGroup" href="javascript:"><i class="iconfont">&#xe694;</i><span>分组</span></a></li>
+                                <li class="lt"><a class="cancelFollow" href="javascript:"><i class="iconfont">&#xe609;</i><span>取消</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <dl id="102" class=" accordion-item custom-group groupDownBtn">
+                <b class="delGroup" data-link='createGroup.txt'><em>-</em></b>
+                <dt class=" accordion-title" data-link='group2.txt'>
+                    <span class="groupName">同事朋友</span>
+                    <i class="on userNum">4</i>
+                </dt>
+                <dd class=" accordion-bd am-collapse ">
+                    <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                    <div class="accordion-content">
+                        <div class="group-list" id="34">
+                            <div class="group-list-mes">
+                                <div class="mes-img"><img src="images/call-no.png" alt=""></div>
+                                <div class="mes-data">
+                                    <h3>开发人员（null）</h3>
+                                    <p>测试测试...</p>
+                                    <i>企业</i>
+                                </div>
+                                <div class="mes-gz rt">
+                                    <i class="iconfont">&#xe61b;</i>
+                                    <span>已关注</span>
+                                </div>
+                            </div>
+                            <ul class="group-list-btn">
+                                <li class="lt"><a href="http://www.baidu.com"><i class="iconfont">&#xe639;</i><span>查看</span></a></li>
+                                <li class="lt"><a href="tel:13799260382"><i class="iconfont">&#xe644;</i><span>拨号</span></a></li>
+                                <li class="lt"><a class="selectGroup" href="javascript:"><i class="iconfont">&#xe694;</i><span>分组</span></a></li>
+                                <li class="lt"><a class="cancelFollow" href="javascript:"><i class="iconfont">&#xe609;</i><span>取消</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <dl id="103" class=" accordion-item custom-group groupDownBtn">
+                <b class="delGroup" data-link='createGroup.txt'><em>-</em></b>
+                <dt class=" accordion-title" data-link='group3.txt'>
+                    <span class="groupName">亲戚家庭</span>
+                    <i class="on userNum">5</i>
+                </dt>
+                <dd class=" accordion-bd am-collapse ">
+                    <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                    <div class="accordion-content">
+                        <div class="group-list" id="33">
+                            <div class="group-list-mes">
+                                <div class="mes-img"><img src="images/call-no.png" alt=""></div>
+                                <div class="mes-data">
+                                    <h3>开发人员（null）</h3>
+                                    <p>测试测试...</p>
+                                    <i>企业</i>
+                                </div>
+                                <div class="mes-gz rt">
+                                    <i class="iconfont">&#xe61b;</i>
+                                    <span>已关注</span>
+                                </div>
+                            </div>
+                            <ul class="group-list-btn">
+                                <li class="lt"><a href="http://www.baidu.com"><i class="iconfont">&#xe639;</i><span>查看</span></a></li>
+                                <li class="lt"><a href="tel:13799260382"><i class="iconfont">&#xe644;</i><span>拨号</span></a></li>
+                                <li class="lt"><a class="selectGroup" href="javascript:"><i class="iconfont">&#xe694;</i><span>分组</span></a></li>
+                                <li class="lt"><a class="cancelFollow" href="javascript:"><i class="iconfont">&#xe609;</i><span>取消</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </section>
+        <div class="mp-groupBg"><a href="javascript:"><img src="images/4_03.png" alt=""><span>尚未编建分组</span></a></div>
+    </div>
+</div>
+<div class="mp-footBtn">
+    <a id="editBtn" class="footBtn1" href="javascript:" tabindex="-1" >编辑</a>
+    <a id="createGroup" class="rt"  href="javascript:" tabindex="-1">+ 新建分组</a>
+</div>
+
+<div class="mp-modal-confirm"></div>
+
+
+
+<!------------弹出框------------->
+<!--编辑弹出框-->
+<div class="am-modal am-modal-confirm mp-btn1 mp-modal mp-modal1" tabindex="-1" id="mp-btn1"  >
+    <div class="am-modal-dialog">
+        <h1 class="modal-header"><span>编辑分组</span></h1>
+        <div class="am-modal-bd modal-group-name">
+            <span>名称</span>
+            <input type="text" placeholder="">
+            <div class="tip"></div>
+        </div>
+        <div class="modal-footer">
+            <span class="mp-close" data-am-modal-close>取消</span>
+            <span id="editGroupBtn" data-link="createGroup.txt" class="confirm am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+<!--新建分组弹出框-->
+<div class="am-modal am-modal-prompt mp-btn1 mp-modal mp-modal2" tabindex="-1" id="mp-btn2">
+    <div class="am-modal-dialog">
+        <h1 class="modal-header"><span>新建分组</span></h1>
+        <div class="am-modal-bd modal-group-name">
+            <span>名称</span>
+            <input type="text" placeholder="1-12个字符">
+            <div class="tip"></div>
+        </div>
+        <div class="modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span id="createGroupBtn" data-link="createGroup1.txt" class="confirm am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+<!--确认删除该分组？弹出框-->
+<div class="am-modal am-modal-confirm   mp-modal " tabindex="-1" id="mp-btn3"  >
+    <div class="am-modal-dialog">
+            <div class="am-modal-bd">
+               <p>删除分组后，<br>组内联系人将转移至默认分组。</p>
+            </div>
+            <div class="modal-footer">
+                <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                <span id="delGroupBtn" data-link="createGroup.txt" class="confirm am-modal-btn" data-am-modal-confirm>确定</span>
+            </div>
+    </div>
+</div>
+<!--确认不再关注此人？弹出框-->
+<div class="am-modal am-modal-confirm mp-modal" tabindex="-1" id="mp-btn4"  >
+    <div class="am-modal-dialog  ">
+        <div class="am-modal-bd">
+            <p>确认不再关注此人？</p>
+        </div>
+        <div class="modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span id="unFollowBtn" data-link="createGroup.txt" class="confirm am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+<!--选择分组弹出框-->
+<div class="am-modal am-modal-confirm mp-modal mp-modal5" tabindex="-1" id="mp-btn5"  >
+    <div class="am-modal-dialog  ">
+            <h1 class="modal-header"><span>选择分组</span></h1>
+            <div class="am-modal-bd">
+                <ul class="amUl">
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                <span id="selectGroupBtn" data-link="createGroup.txt" class="confirm am-modal-btn" data-am-modal-confirm>确定</span>
+            </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/mpindex.js"></script>
+</body>
+</html>
